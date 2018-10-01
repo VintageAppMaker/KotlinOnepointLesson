@@ -1,4 +1,4 @@
-package functional
+package advance
 
 fun main(args: Array<String>) {
     var good : String? = null
