@@ -1,4 +1,4 @@
-package usingexample
+package functional
 
 // Kotlin에서 DSL을 이용하기 위한
 fun main(args: Array<String>) {

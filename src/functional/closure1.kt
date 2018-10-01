@@ -1,4 +1,4 @@
-package usingexample
+package functional
 
 /**
  * Created by park on 2017-06-01.
