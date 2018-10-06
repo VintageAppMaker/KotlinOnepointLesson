@@ -28,10 +28,14 @@ var EmptyClass?.newProp : String
         }
         set(value) { this!!.message = value + "-" + this!!.message}
 
-// MutableList에 first 프로퍼티 추가
-var MutableList<String>?.first : String
-    get() {return this!!.get(0)}
-    set(value) {this!!.add(0, value)}
+// MutableList에 firstHead 프로퍼티 추가
+var MutableList<String>?.firstHead : String
+    get() {
+        return this!!.get(0)
+    }
+    set(value) {
+        this!!.add(0, value)
+    }
 
 fun main(args : Array<String> ){
     name = "동작구 에미넴 #2"
@@ -45,10 +49,12 @@ fun main(args : Array<String> ){
     println (empty.newProp)
 
     // mutableList에 확장 프로퍼티 추가
-    val mList = mutableListOf<String>("나는", "코틀린", "입니다")
-    println(mList)
-    mList.first = "너는"
-    println(mList)
-    println(mList.first)
+    // Queue와 흡사한 Log처리
+    val mLog = mutableListOf<String>("success:100", "pass:203", "fail:001")
+    println(mLog)
+    mLog.firstHead = "success:100"
+    mLog.firstHead = "shutdown:-1"
+    println(mLog)
+    println(mLog.firstHead)
 
 }
