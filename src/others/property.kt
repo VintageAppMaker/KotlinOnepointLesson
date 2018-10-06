@@ -3,15 +3,15 @@ package others
 /**
  * Created by park on 2017-12-31.
  */
-var name : String = "박모씨"
+var passwd : String = ""
     get(){
         if(field.length > 5) {
-            field =  "외우기 힘듬"
+            field =  "길이를 초과했음"
         }
         return field
     }
     set(s : String ){
-        println ("\"${s}\"이 입력됨.")
+        println ("\"${s}\"을 저장함")
         field = s
     }
 
@@ -38,8 +38,8 @@ var MutableList<String>?.firstHead : String
     }
 
 fun main(args : Array<String> ){
-    name = "동작구 에미넴 #2"
-    println (name)
+    passwd = "1234567867657572313"
+    println (passwd)
 
     // 내가만든 클래스에 확장 프로퍼티 추가
     val empty = EmptyClass()
