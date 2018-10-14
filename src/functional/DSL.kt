@@ -8,7 +8,7 @@ fun main(args: Array<String>) {
     // DSL이 편리할 수도 있다.
     val p = DSLMaker {
         name = "Player 1"
-        exp {
+        status {
             job = "Paladin"
             level = 21
         }
@@ -21,7 +21,7 @@ fun main(args: Array<String>) {
 // {}안으로 들어갈때마다
 // 확장함수를 모두 만들어주어야 한다.
 fun DSLMaker(block: Player.() -> Unit): Player = Player().apply(block)
-fun Player.exp(block : Status.()-> Unit){
+fun Player.status(block : Status.()-> Unit){
     status = Status().apply(block)
 }
 
