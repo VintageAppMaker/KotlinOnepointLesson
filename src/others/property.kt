@@ -54,7 +54,7 @@ fun main(args : Array<String> ){
     println(mLog)
     mLog.firstHead = "success:100"
     mLog.firstHead = "shutdown:-1"
-    println(mLog)
+    mLog.forEach { println(">${it}"); }
     println(mLog.firstHead)
 
 }
