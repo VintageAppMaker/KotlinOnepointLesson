@@ -12,14 +12,14 @@ fun main(args : Array<String>){
 
     println("증가된 숫자는 ${obj.nCount} 입니다.");
 
-    ani2(3, "울어", {
+    obj.setOnEvent(3, "울어", {
         // 확장함수를 호출한 파라메터
         nCount ->
         println ("${nCount}번 울겠습니다.")
         (1..nCount).map{crying()}
     })
 
-    ani2(2, "먹어", {
+    obj.setOnEvent(2, "먹어", {
         // 확장함수를 호출한 파라메터
         nCount ->
         println ("${nCount}번 먹겠습니다.")
@@ -39,23 +39,21 @@ fun ani(extFunc: Animal.() -> Unit) : Animal{
     return ani
 }
 
-// 넘겨질 객체 Animal.() 와 같이
-// 확장함수를 파라메터로 넘긴다.
-// 1개의 숫자를 넘긴다.
-fun ani2(nCount : Int, message : String, extFunc: Animal.(Int) -> Unit) : Animal{
-    var ani = Animal()
-    // 확장함수가 실행되어야 한다. 숫자를 넘겼다.
-    when (message){
-        "울어" -> {ani.extFunc(nCount)}
-        "먹어" -> {ani.extFunc(nCount)}
-        else -> {println("알수없는 메시지: ${ message } 입니다.")}
-    }
-
-    return ani
-}
-
 class Animal{
     open var nCount = 0
     fun crying() = println("$this>> 아흥")
     fun eat()    = println("$this>> 우걱우걱")
+
+    // Java의 불편한 Interfafce보다 편리하게
+    // 이벤트 핸들러를 등록할 수 있다.
+    open fun setOnEvent(nCount : Int, message : String, extFunc: Animal.(Int) -> Unit) : Animal{
+        // 확장함수가 실행되어야 한다. 숫자를 넘겼다.
+        when (message){
+            "울어" -> {extFunc(nCount)}
+            "먹어" -> {var n = if (nCount < 3) 3 else nCount;  extFunc(n)}
+            else -> {println("알수없는 메시지: ${ message } 입니다.")}
+        }
+
+        return this
+    }
 }
