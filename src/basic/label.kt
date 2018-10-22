@@ -15,7 +15,7 @@ fun main(args : Array<String>){
 // 거의 사용하지 않는 문법이지만, 함수형 프로그래밍 지원때문에
 // 더 강조된 듯 함.
 fun ExitDoubleLoop() {
-    HereToExit@ for(i in 0 .. 100){
+    HereToExit@ for(i in 0 .. 2){
         for (j in  0.. 10){
             if (j == 5) break@HereToExit;
             println("i->$i, j->$j")
@@ -26,9 +26,9 @@ fun ExitDoubleLoop() {
 }
 
 fun doubleLoop() {
-    for(i in 0 .. 100){
+    for(i in 0 .. 2){
         for (j in  0.. 10){
-            if (j == 5) break
+            if (j == 2) break
             println("i->$i, j->$j")
         }
         println("j loop end")
