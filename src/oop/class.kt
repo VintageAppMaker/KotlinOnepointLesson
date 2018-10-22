@@ -15,7 +15,7 @@ fun main(args : Array<String>){
     println( obj4.getMyName() );
 }
 
-// class name(변수명: 데이터형, ..){} 으로 생성자를 만들어쓰기도 한다.
+// class passwd(변수명: 데이터형, ..){} 으로 생성자를 만들어쓰기도 한다.
 class TestClass{
     var name : String = "";
 
@@ -36,7 +36,7 @@ open class ParentClass {
     fun getMyName() : String = name;
 }
 
-//  상속받을 떄는 선조클래스를 "class name : 선조클래스명(생성자인자){}" 형식으로 해야 한다.
+//  상속받을 떄는 선조클래스를 "class passwd : 선조클래스명(생성자인자){}" 형식으로 해야 한다.
 class ChildClass : ParentClass(){
 
 }
