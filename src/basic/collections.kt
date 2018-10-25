@@ -36,7 +36,7 @@ fun main(args : Array<String>){
     println("__________")
 
     // Map: java보다 불편한 듯.
-    var 맵 = hashMapOf("고양이" to 1, "강아지" to 2)
-    println(맵["고양이"])
+    var m = hashMapOf("고양이" to 1, "강아지" to 2)
+    println(m["고양이"])
 
 }
