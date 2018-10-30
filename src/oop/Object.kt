@@ -10,8 +10,8 @@ object SingleTon {
 
 class NormalClass{
     var msg: String = "일반객체로 생성하면 이 변수를 액세스 가능함"
-    // companion object Factory {} 안에서 구현해야 static 가능
-    companion object Factory {
+    // companion object {} 안에서 구현해야 static 가능
+    companion object {
         var staticVar   = "staticVar"
         fun staticFunc()= println("이거스태틱 함수임")
     }
