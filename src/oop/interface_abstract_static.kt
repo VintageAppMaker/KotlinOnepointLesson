@@ -37,8 +37,8 @@ abstract class TestAbstract{
 class TestAbstractImp : TestAbstract(){
     override fun abstractFunc() = println("상속구현했음");
 
-    // companion object Factory {} 안에서 구현해야 static 가능
-    companion object Factory {
+    // companion object {} 안에서 구현해야 static 가능
+    companion object {
         var staticVar    = "staticVar";
         fun staticFunc() = println("이거스태틱 함수임");
     }
