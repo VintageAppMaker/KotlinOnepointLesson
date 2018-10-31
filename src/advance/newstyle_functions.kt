@@ -21,10 +21,8 @@ fun main(args : Array<String> ){
     obj.aboutMe()
 
     // run()
-    // 순서대로 실행. 결과가 적용됨. apply와 차이점은 모르겠음.
-    // apply는 생성되는 경우에도 가능하고 run은 이미 생성된 것에만
-    // 가능한다는 글을 읽었음.
-    obj.run { sName = "동작구 에미넴"; aging(); }
+    // 함수처럼 결과값을 {}밖으로 리턴한다.
+    obj.run { sName = "동작구 에미넴"; aging(); sName}.let { println (it) }
     obj.aboutMe()
 
 }
