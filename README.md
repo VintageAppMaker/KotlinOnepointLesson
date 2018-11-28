@@ -9,7 +9,7 @@ First Kotlin은 입문자를 위해 과도한 한글표현을 사용했지만, �
 [Kotlin 공식페이지](https://kotlinlang.org/)
 에서 레퍼런스를 참고합니다.
 
-- [First Kotlin](https://github.com/VintageAppMaker/FirstKotlin)
+- [First Kotlin - 왕초보를 위한 ](https://github.com/VintageAppMaker/FirstKotlin)
 - play store [(kotlin 배우기 - github)](https://play.google.com/store/apps/details?id=com.psw.appbook.kotlin&hl=ko)
 
 
