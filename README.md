@@ -16,3 +16,4 @@ First Kotlin은 입문자를 위해 과도한 한글표현을 사용했지만, �
 Contents:
 ---------
 
+자세한 내용은 [wiki](https://github.com/VintageAppMaker/KotlinOnepointLesson/wiki)에서 관리합니다. 
