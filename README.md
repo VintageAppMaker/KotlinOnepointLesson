@@ -17,3 +17,9 @@ Contents:
 ---------
 
 자세한 내용은 [wiki](https://github.com/VintageAppMaker/KotlinOnepointLesson/wiki)에서 관리합니다. 
+
+
+Book:
+--------
+* [yes24](http://www.yes24.com/24/Goods/67533956?Acode=101)
+* [인터파크](http://book.interpark.com/product/BookDisplay.do?_method=detail&sc.prdNo=298354381&sc.saNo=003002003&bid1=search_auto&bid2=detail&bid3=prd_img&bid4=001) 
