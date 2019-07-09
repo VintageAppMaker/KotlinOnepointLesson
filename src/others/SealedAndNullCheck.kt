@@ -14,7 +14,7 @@ fun main() {
         when(it){
             is StudyNote -> {println ("공부노트: ${it.title}\n${it.content}")}
             is WorkNote  -> {println ("업무노트: ${it.number}:${it.title}\n${it.author}")}
-            is Doodle    -> {println ("업무노트: ${it.memo}\n${it.Drawing.toList()} ")}
+            is Doodle    -> {println ("낙서노트: ${it.memo}\n${it.Drawing.toList()} ")}
             else         -> {}
         }
 
