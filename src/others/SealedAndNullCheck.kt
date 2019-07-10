@@ -1,6 +1,6 @@
 package others
 
-fun main() {
+fun main(args: Array<String>) {
 
     val lst = listOf<Note>(
             StudyNote("인문학", "배워야함"),
@@ -9,14 +9,16 @@ fun main() {
     )
 
     // sealed class는 통신프로토콜 또는 RecyclerView의 다양한 데이터에 사용됨
-    lst.forEach {
+    lst.forEachIndexed { index, note ->
 
-        when(it){
-            is StudyNote -> {println ("공부노트: ${it.title}\n${it.content}")}
-            is WorkNote  -> {println ("업무노트: ${it.number}:${it.title}\n${it.author}")}
-            is Doodle    -> {println ("낙서노트: ${it.memo}\n${it.Drawing.toList()} ")}
+        println("[$index]------------------------")
+        when(note){
+            is StudyNote -> {println ("공부노트: ${note.title}\n${note.content}")}
+            is WorkNote  -> {println ("업무노트: ${note.number}:${note.title}\n${note.author}")}
+            is Doodle    -> {println ("낙서노트: ${note.memo}\n${note.Drawing.toList()} ")}
             else         -> {}
         }
+        println("---------------------------\n")
 
     }
 
