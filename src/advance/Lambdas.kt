@@ -25,12 +25,15 @@ fun main(args : Array<String> ){
 
     // 함수원형의 포인터를 대입시키는 편법
     var funParameter = {a : Int -> AddFunc(a)}
-    funtTest4( funParameter )
+    funTest4( funParameter )
 
     // 위의 코딩을 점점 더 단순화
-    funtTest4( { a : Int -> AddFunc(a)} )
-    funtTest4{ a : Int -> AddFunc(a)}
-    funtTest4{ a  -> AddFunc(a) }
+    funTest4( { a : Int -> AddFunc(a)} )
+    funTest4{ a : Int -> AddFunc(a)}
+    funTest4{ a  -> AddFunc(a) }
+
+    // 함수형 인자가 맨마지막에 존재할 시
+    funTest5(100){ num -> num - 10}
 }
 
 fun funTest1(func : (Int, Int) -> Int  ){
@@ -45,8 +48,12 @@ fun funtTest3(func : (Int, Int) -> Int, a : Int, b : Int  ){
     println ( func(a, b) )
 }
 
-fun funtTest4(func : (Int) -> Int ){
+fun funTest4(func : (Int) -> Int ){
     println ( func(1) )
+}
+
+fun funTest5(num : Int, func : (Int) -> Int ){
+    if(num > 10) println ( func(num) )
 }
 
 fun AddFunc(i : Int) : Int {return i+100}
