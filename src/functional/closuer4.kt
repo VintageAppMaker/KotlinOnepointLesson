@@ -14,7 +14,7 @@ class UsingCallback{
     var count = 0
     fun fireEvent(){
         RunningCallback().apply {
-            eventHandling(count) {
+            eventHandling(2) {
                 callback ->
                 println("eventHandling - start")
                 (0..100).forEach{callback(this@UsingCallback)}
@@ -30,7 +30,7 @@ class RunningCallback{
             obj ->
             if (obj.count > 9 ) return@callback
             println("callback - start")
-            obj.count++
+            obj.count = obj.count + num
             println(obj.count)
             println("callback - end")
         }
