@@ -16,9 +16,9 @@ class UsingCallback{
         RunningCallback().apply {
             eventHandling(2) {
                 callback ->
-                println("eventHandling - start")
+                println("[2].using eventHandling - start")
                 (0..100).forEach{callback(this@UsingCallback)}
-                println("eventHandling - end")
+                println("[3].using eventHandling - end")
             }
         }
     }
@@ -26,14 +26,14 @@ class UsingCallback{
 
 class RunningCallback{
     fun eventHandling( num : Int,  callback : ( ( UsingCallback )-> Unit ) -> Unit){
+        println("[1].Running eventHandling - start")
         callback{
             obj ->
             if (obj.count > 9 ) return@callback
-            println("callback - start")
             obj.count = obj.count + num
-            println(obj.count)
-            println("callback - end")
+            println(">>> calling callback - ${obj.count}")
         }
+        println("[4].Running eventHandling - end")
     }
 
 }
