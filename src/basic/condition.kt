@@ -20,6 +20,14 @@ fun caseExample() {
         in (0 .. 9) -> {println ("0-10까지 숫자")}
         else        -> {println ("???")}
     }
+
+    // if -else의 간소화 목적 : () 사용안함
+    val n = 30
+    when {
+        n < 30 -> {println ("30보다 <")}
+        n > 30 -> {println ("30보다 >")}
+        else ->   {println ("30임")}
+    }
 }
 
 fun loopExample() {
