@@ -1,23 +1,41 @@
 package advance
 
+// let은 연산된 값으로 return 할 수 있고
+// also는 파라메터로 받은 값을 그대로 return 한다.
 fun main(args: Array<String>) {
-    var good : String? = null
-    good.let { "오픈소스의 장점은" }
-            .let  {println(it); listOf("필요한 기능을 제공한다", "다양하게 고를 수 있다", "예제를 접하기 쉽다") }
-            .also { it.mapIndexed{i,  장점 -> println ("$i $장점") } }
-            .let  { it.size } // also 이전의 값이 it
-            .let  { println ("장점이 ${it}개나 된다.")}
+    normalStyle()
+    funcionalStyle()
+}
 
+private fun normalStyle() {
+    val animals = "고양이 까치 개 쥐 독수리"
+    val lstAnimals = animals.split(" ")
+    println("-------------");
+    println("log 출력:")
+    lstAnimals.forEach { println(it) }
+    println("-------------");
 
-    var bad : String? = null
-    bad.let { "오픈소스의 단점은" }
-            .run  {
-                println(this);
-                if( this.indexOf("오픈소스") < 0 ) null
-                else listOf("법적문제가 어지러움", "맹신하다 망할 수 있음", "만드는 것보다 비주얼에 신경쓰게됨")
+    val nIndx = lstAnimals.indexOf("독수리")
+    if (nIndx > 0) {
+        println("독수리는 ${nIndx} index에 있습니다.")
+    }
+}
+
+// 필요한 변수는 함수내부에서만 쓰고
+// if문을 최소화 한다
+// "변수와 if문을 최소화하여 예외를 없앤다". ← 함수형 프로그래밍적 사고
+private fun funcionalStyle() {
+    var animals = "고양이 까치 개 쥐 독수리"
+    animals.split(" ")
+            .also { items ->
+                println("-------------");
+                println("log 출력:")
+                items.forEach { println(it) }
+                println("-------------");
             }
-            ?.also { it.mapIndexed{i,  단점 -> println ("$i $단점") } } // null이 아닐경우 실행됨
-            ?.let  { it.size  }
-            ?.let  { println ("단점이 ${it}개나 된다.")  }
-
+            .let { items ->
+                var indx = items.indexOf("독수리")
+                if (indx < 0) null else indx
+            }
+            ?.let { println("독수리는 ${it} index에 있습니다.") }
 }
