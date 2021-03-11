@@ -4,60 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39096790-42ff-402c-8950-7b2e374bfeb9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.name" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/kotlinc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/kotlinc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/KotlinOnepointLesson.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MyTesting/MyTest.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/MyTesting/MyTest.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/advance/Lambdas.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/advance/Lambdas.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/advance/functionextension.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/advance/functionextension.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/advance/infix.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/advance/infix.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/advance/newstyle_functions.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/advance/newstyle_functions.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/advance/newstyle_functions2.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/advance/newstyle_functions2.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/advance/timer.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/advance/timer.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/basic/DataType_Number.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/basic/DataType_Number.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/basic/DataType_string.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/basic/DataType_string.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/basic/First.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/basic/First.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/basic/any_type.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/basic/any_type.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/basic/basicfunction.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/basic/basicfunction.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/basic/collections.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/basic/collections.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/basic/condition.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/basic/condition.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/basic/label.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/basic/label.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/basic/scope.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/basic/scope.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/basic/trycatch.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/basic/trycatch.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/basic/variable.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/basic/variable.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/basic/variable_null.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/basic/variable_null.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/functional/DSL.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/functional/DSL.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/functional/closuer4.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/functional/closuer4.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/functional/closure1.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/functional/closure1.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/functional/closure2.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/functional/closure2.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/functional/closure3.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/functional/closure3.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/functional/curryng.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/functional/curryng.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/functional/functional_think.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/functional/functional_think.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javaimport/TestJava.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/javaimport/TestJava.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javaimport/UsingKotlin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/javaimport/UsingKotlin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javaimport/javaexport.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/javaimport/javaexport.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/javaimport/javaimport.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/javaimport/javaimport.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/oop/Object.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/oop/Object.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/oop/class.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/oop/class.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/oop/dataclass.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/oop/dataclass.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/oop/interface_abstract_static.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/oop/interface_abstract_static.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/oop/polymorphism.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/oop/polymorphism.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/others/AndroidSimulation.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/others/AndroidSimulation.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/others/LateInitAndLazy.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/others/LateInitAndLazy.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/others/MathProcess.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/others/MathProcess.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/others/MyApp.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/others/MyApp.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/others/SealedAndNullCheck.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/others/SealedAndNullCheck.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/others/SomeThingToHard.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/others/SomeThingToHard.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/others/associate.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/others/associate.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/others/multifulReturn.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/others/multifulReturn.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/others/property.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/others/property.kt" afterDir="false" />
-    </list>
+    <list default="true" id="39096790-42ff-402c-8950-7b2e374bfeb9" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -184,7 +131,26 @@
       <option name="presentableId" value="Default" />
       <updated>1615426651742</updated>
     </task>
+    <task id="LOCAL-00001" summary="gradle 적용">
+      <created>1615457651308</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1615457651308</updated>
+    </task>
+    <task id="LOCAL-00002" summary="gradle 적용">
+      <created>1615457825701</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1615457825701</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="gradle 적용" />
+    <option name="LAST_COMMIT_MESSAGE" value="gradle 적용" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/untitled1$CoroutinetestKt.ic" NAME="CoroutinetestKt Coverage Results" MODIFIED="1615454088949" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
