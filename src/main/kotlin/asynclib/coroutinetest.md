@@ -67,6 +67,10 @@
             println(process2.await()+ process1.await())
             delay(15000)
         }
+      
+        // 메모리 누수를 위해 cancel
+        scope.cancel()
+        println("end")
         ~~~   
         
 

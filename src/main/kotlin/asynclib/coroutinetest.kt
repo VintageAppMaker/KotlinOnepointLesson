@@ -51,4 +51,8 @@ fun main() {
         delay(15000)
     }
 
+    // 메모리 누수를 위해 cancel
+    scope.cancel()
+    println("end")
+
 }
