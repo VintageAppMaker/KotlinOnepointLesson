@@ -1,5 +1,5 @@
 ### Async 관련 coroutine, Flow
-> coroutine, Flow의 핵심만 정리하기 
+> coroutine 핵심만 정리하기 
 
 [전체소스](coroutinetest.kt)
 
