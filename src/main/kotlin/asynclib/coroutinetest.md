@@ -46,7 +46,7 @@
 
         }
         ~~~
-    - 참고: runBlocking ()은 Thread를 점유하므로 사용을 권장하지 않음. 
+    - 참고 1: runBlocking ()은 Thread를 점유하므로 사용을 권장하지 않음. 
     
         ~~~kotlin
         // thread를 혼자점유함. Android 프로그래밍에서는 피해야 하는 코드(ANR)
@@ -72,6 +72,6 @@
         scope.cancel()
         println("end")
         ~~~   
-        
+    - 참고 2: GlobalScope는 싱글톤으로 Android 생명주기에 따라 동작. 말그대로 백그라운드에서 컴포넌트의 제약없이 전역적으로 처리가능함. 단, 상황에 따라 처리해주어야 하는 코드가 많으므로 되도록 사용하지 않기를 권장.     
 
     
