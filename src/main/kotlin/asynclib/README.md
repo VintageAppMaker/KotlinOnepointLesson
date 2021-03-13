@@ -73,5 +73,25 @@
         println("end")
         ~~~   
     - 참고 2: GlobalScope는 싱글톤으로 Android 생명주기에 따라 동작. 말그대로 백그라운드에서 컴포넌트의 제약없이 전역적으로 처리가능함. 단, 상황에 따라 처리해주어야 하는 코드가 많으므로 되도록 사용하지 않기를 권장.     
+    - 참고 3: flow는 coroutine내에서 스트림과 같은 순차적 프로그래밍을 할 때 사용한다. 주로 네트웍 통신에서 유용하게 사용된다. flow{}내에서 emit으로 값을 전달하면 collect에서 받아 처리한다. 
+        ~~~kotlin
+        GlobalScope.launch {
+            flow{
+                lst.forEach {
+                    var fn = { n : Int -> 0 }
+                    if( it < 70 ){
+                        fn = ::sub
+                    } else {
+                        fn = ::add
+                    }
+                    emit ( fn )
+                }
+            }.collect {
+                count = it(count)
+                println ("fast count => $count")
+            }
+        }
+       
+        ~~~
 
     
