@@ -19,8 +19,8 @@ fun main() = runBlocking{
     // 2. UI 작업(imgList 보여주기)
     launch {
         (0..100).forEach {
-            println (">> Another UI Working.. $it")
-            println (">> imgList count =>  ${imgList.count()}")
+            println (">> [UI Working].. #$it")
+            println (">> [UI Working] imgList count =>  ${imgList.count()}")
             delay(500)
 
             if(bComplete) cancel()
@@ -46,7 +46,7 @@ fun getImageInfoFromNetwork(url : String, imgList : MutableList<String>, onCompl
             emit(true)
         }.collect {
             if (it is String ) {
-                println("image download complete => $it")
+                println("[network] image download complete => $it")
                 imgList.add(it)
             } else {
                 // 종료 callback 호출
