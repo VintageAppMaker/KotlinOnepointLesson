@@ -20,7 +20,7 @@ fun main() = runBlocking{
     launch {
         (0..100).forEach {
             println (">> \uD83C\uDFA8 [UI Working].. #$it")
-            println (">> \uD83C\uDFA8 [UI Working] imgList count =>  ${imgList.count()}")
+            println (">> \uD83C\uDFA8 imgList count =>  ${imgList.count()}")
             delay(500)
 
             if(bComplete) cancel()
