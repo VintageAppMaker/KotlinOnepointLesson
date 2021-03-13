@@ -32,6 +32,8 @@
        - 코루틴 내의 비동기 함수 : async{} 결과값을 리턴하고 await()로 대기한다. 
        - 코루틴 내의 대기함수 : delay(milliseconds)   
        - 타임아웃으로 대기하고 기다림 : withTimeoutOrNull(milliseconds) 
+       - 종료: cancel()
+       - 순차적 처리: flow{}를 생성. emit(), collect{}로 스트림처리. 
         ~~~kotlin
         scope.launch {
             // CoroutineContext 를 변경하여 백그라운드로 전환하여 작업을 처리합니다
