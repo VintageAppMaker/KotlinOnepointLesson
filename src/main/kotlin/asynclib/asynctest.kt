@@ -19,8 +19,8 @@ fun main() = runBlocking{
     // 2. UI 작업(imgList 보여주기)
     launch {
         (0..100).forEach {
-            println (">> [UI Working].. #$it")
-            println (">> [UI Working] imgList count =>  ${imgList.count()}")
+            println (">> \uD83C\uDFA8 [UI Working].. #$it")
+            println (">> \uD83C\uDFA8 [UI Working] imgList count =>  ${imgList.count()}")
             delay(500)
 
             if(bComplete) cancel()
