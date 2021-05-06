@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="39096790-42ff-402c-8950-7b2e374bfeb9" name="Default Changelist" comment="" />
+    <list default="true" id="39096790-42ff-402c-8950-7b2e374bfeb9" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -36,11 +38,20 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Kotlin Class" />
+        <option value="Kotlin File" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="ProjectId" id="1pagX886bMBN6EqqBxBycEywFla" />
   <component name="ProjectViewState">
@@ -52,15 +63,31 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="dart.analysis.tool.window.visible" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/main/kotlin/others" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\intellij_project\KotlinOnepointLesson\src\main\kotlin\others" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\intellij_project\KotlinOnepointLesson\src\main\kotlin" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.CoroutinetestKt">
+  <component name="RunManager" selected="Application.EasyExceptKt">
+    <configuration name="AsynctestKt" type="JetRunConfigurationType" nameIsGenerated="true">
+      <module name="me.user.KotlinOnepointLesson.main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="AsynctestKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="CoroutinetestKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <module name="me.user.KotlinOnepointLesson.main" />
       <option name="VM_PARAMETERS" />
@@ -74,14 +101,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FunctionextensionKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+    <configuration name="EasyExceptKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
       <module name="me.user.KotlinOnepointLesson.main" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="MAIN_CLASS_NAME" value="advance.FunctionextensionKt" />
+      <option name="MAIN_CLASS_NAME" value="others.EasyExceptKt" />
+      <option name="WORKING_DIRECTORY" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FlowtestKt" type="JetRunConfigurationType" temporary="true" nameIsGenerated="true">
+      <module name="me.user.KotlinOnepointLesson.main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="MAIN_CLASS_NAME" value="asynclib.FlowtestKt" />
       <option name="WORKING_DIRECTORY" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -115,10 +155,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.EasyExceptKt" />
+        <item itemvalue="Application.FlowtestKt" />
         <item itemvalue="Application.CoroutinetestKt" />
         <item itemvalue="Application.InfixKt" />
         <item itemvalue="Application.Newstyle_functions2Kt" />
-        <item itemvalue="Application.FunctionextensionKt" />
       </list>
     </recent_temporary>
   </component>
@@ -145,7 +186,98 @@
       <option name="project" value="LOCAL" />
       <updated>1615457825701</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="gradle 적용">
+      <created>1615457993211</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1615457993211</updated>
+    </task>
+    <task id="LOCAL-00004" summary="gradle 적용">
+      <created>1615458069511</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1615458069511</updated>
+    </task>
+    <task id="LOCAL-00005" summary="gradle 적용">
+      <created>1615459964379</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1615459964379</updated>
+    </task>
+    <task id="LOCAL-00006" summary="gradle 적용">
+      <created>1615460068707</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1615460068707</updated>
+    </task>
+    <task id="LOCAL-00007" summary="gradle 적용">
+      <created>1615514952768</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1615514952768</updated>
+    </task>
+    <task id="LOCAL-00008" summary="gradle 적용">
+      <created>1615598149162</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1615598149163</updated>
+    </task>
+    <task id="LOCAL-00009" summary="gradle 적용">
+      <created>1615598347455</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1615598347455</updated>
+    </task>
+    <task id="LOCAL-00010" summary="gradle 적용">
+      <created>1615598457265</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1615598457265</updated>
+    </task>
+    <task id="LOCAL-00011" summary="gradle 적용">
+      <created>1615599270873</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1615599270873</updated>
+    </task>
+    <task id="LOCAL-00012" summary="gradle 적용">
+      <created>1615600257779</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1615600257779</updated>
+    </task>
+    <task id="LOCAL-00013" summary="gradle 적용">
+      <created>1615600411670</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1615600411670</updated>
+    </task>
+    <task id="LOCAL-00014" summary="gradle 적용">
+      <created>1615603811882</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1615603811882</updated>
+    </task>
+    <task id="LOCAL-00015" summary="gradle 적용">
+      <created>1620268524710</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1620268524710</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
