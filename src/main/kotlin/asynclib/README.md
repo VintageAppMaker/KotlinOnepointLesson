@@ -4,6 +4,7 @@
 1. [coroutinetest.kt](coroutinetest.kt)
 2. [flowtest.kt](flowtest.kt)
 3. [asynctest.kt](asynctest.kt)
+4. [JobTest.kt](JobTest.kt)
 
 - 코루틴 ( coroutine )
   
@@ -102,4 +103,67 @@
        
         ~~~
 
+    - 코루틴을 cancel 하는 방법은
+        - Job에서 cancel()를 호출
+        - Job은  CoroutineScope의 launch를 실행하여 결과값을 받는 방법과
+        - CoroutineScope의 launch를 호출할 때, job을 생성하여 넘기는 방법이 있다.
+    
+        ~~~kotlin
+        private suspend fun JobTest2() : Job{
+            val job2 = CoroutineScope(Dispatchers.Default).launch {
+                val totalSeconds = TimeUnit.MINUTES.toSeconds(2)
+                val tickSeconds = 1
+                for (second in totalSeconds downTo tickSeconds) {
+                    val time = String.format(
+                        "%02d분%02d초",
+                        TimeUnit.SECONDS.toMinutes(second),
+                        second - TimeUnit.MINUTES.toSeconds(TimeUnit.SECONDS.toMinutes(second))
+                    )
+                    println(time)
+                    delay(1000)
+                }
+                println("끝")
+            }
+            
+            return job2
+        }
+        private suspend fun JobTest1(job: CompletableJob) {
+            CoroutineScope(Dispatchers.Default + job).launch {
+                val totalSeconds = TimeUnit.MINUTES.toSeconds(2)
+                val tickSeconds = 1
+                for (second in totalSeconds downTo tickSeconds) {
+                val time = String.format(
+                    "%02d분%02d초",
+                    TimeUnit.SECONDS.toMinutes(second),
+                    second - TimeUnit.MINUTES.toSeconds(TimeUnit.SECONDS.toMinutes(second))
+                )
+                println(time)
+                delay(1000)
+                }
+                println("끝")
+            }
+      
+        }
+      
+      
+        ...
+      
+        // job을 넘겨서 취소
+        val job = Job()
+        JobTest1(job)
+    
+        delay(1000 * 5)
+        job.cancel()
+        println("job.cancel()")
+    
+        // job을 넘겨받아 취소
+        val job2 = JobTest2()
+    
+        delay(1000 * 5)
+        job2.cancel()
+        println("job2.cancel()")
+       
+        ...
+      
+        ~~~  
     
