@@ -7,12 +7,10 @@ fun main() {
 
 class outerCls {
     var name = "base"
-    var age  = 100
     fun test(){
         innerCls().apply{
             doFunction{
-                // outerCls 자원을 접근해서 사용할 수 있다.
-                println("${age}")
+                // innerCls의 name을 사용한다.
                 println (name)
             }
         }
@@ -21,7 +19,7 @@ class outerCls {
     fun test2(){
         innerCls().apply{
             doFunction{
-                // outerCls 자원을 접근해서 사용할 수 있다.
+                // outerCls의 name을 사용한다.
                 println (this@outerCls.name)
             }
         }
