@@ -33,6 +33,8 @@ class outerCls {
 
             // 3. 람다(doFunction)에서 innerCls의 자원을 사용하고자 한다면
             // innerCls에서 파라메터로 자신을 넘겨주면 된다.
+            // (*) apply 안에서 사용한다면 doFunction2와 같이
+            // 할 필요없이 2.번처럼 하면된다.
             doFunction2{
                 inner ->
                 inner.innerFunc()
