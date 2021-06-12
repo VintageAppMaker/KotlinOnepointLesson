@@ -26,6 +26,9 @@ class outerCls {
                 println (name)
                 // outerCls의 name을 사용한다.
                 println (this@outerCls.name)
+
+                // innerCls의 innerFunc()
+                innerFunc()
             }
 
             // 3. 람다(doFunction)에서 innerCls의 자원을 사용하고자 한다면
