@@ -35,7 +35,7 @@ class OuterCls2(inn : InnerCls){
     }
 }
 
-// 3.생성자를 통한 외부주입
+// 3.setter를 통한 외부주입
 class OuterCls3{
 
     lateinit var inner : InnerCls
@@ -45,7 +45,7 @@ class OuterCls3{
     }
 }
 
-// 3.생성자를 통한 외부주입
+// 3.setter를 통한 외부주입
 class OuterCls4{
 
     lateinit var inner : InnerCls
