@@ -52,7 +52,7 @@ fun main() {
 
     words.forEach {
         checkValid.add(
-            chkSizeLimted(value = "$it", onFail = { nLen -> println ("$it <-  ${nLen} size is not allowed")}, 12, min= 8)
+            chkSizeLimted(value = "$it", onFail = { nLen -> println ("$it <-  ${nLen} size is not allowed")}, max=12, min= 8)
         )
 
         checkValid.add(
