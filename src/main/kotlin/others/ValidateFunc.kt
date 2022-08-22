@@ -62,36 +62,44 @@ fun ValidateFunc.checkAll(block : (Boolean) ->Unit) {
 fun main() {
     val checkValid = ValidateFunc()
 
-    val s = "123456"
+    val sTest1  = "123456"
+    val sTest2  = "움하하하"
+
     checkValid.add(
-        chkSizeLimted(value= s, min=5, max = 12,
-            onFail = { n -> println("$s <- $n is not allowed") })
+        chkSizeLimted(value= sTest1, min=5, max = 12,
+            onFail = { n -> println("$sTest1 <- $n is not allowed") })
     )
 
     checkValid.add(
-        chkPattern(value= s, sPattern = "^[0-9]*\$",
-            onFail = { println("$s <- 숫자가 아닙니다") })
+        chkPattern(value= sTest1, sPattern = "^[0-9]*\$",
+            onFail = { println("$sTest1 <- 숫자가 아닙니다") })
     )
 
-    println ("${s} 결과는 ${checkValid.validate()}")
+    println ("${sTest1} 결과는 ${checkValid.validate()}")
 
     // DSL 처리
     ValidateDSL {
         Limited {
-            value = s
+            value = sTest1
             max   = 10
             min   = 8
-            onFail = { n -> println("$s <- $n is not allowed")}
+            onFail = { n -> println("$sTest1 <- $n is not allowed")}
         }
 
         Regex {
-            value    = s
+            value    = sTest1
             sPattern = "^[가-힣]*\$"
-            onFail   = {println("$s <- 한글아님")}
+            onFail   = {println("$sTest1 <- 한글아님")}
+        }
+
+        Regex {
+            value    = sTest2
+            sPattern = "^[0-9]*\$"
+            onFail   = {println("$sTest2 <- 숫자가 아님")}
         }
 
         checkAll{
-            b -> println ("${s} 결과는 $b")
+            b -> println ("ValidateDSL{} 테스트 결과는 $b")
         }
     }
 }
