@@ -55,7 +55,7 @@ fun ValidateFunc.Regex(block : chkPattern.() ->Unit) {
     add(chkPattern().apply(block))
 }
 
-fun ValidateFunc.checkAll(block : (Boolean) ->Unit) {
+fun ValidateFunc.checkAll(block : ValidateFunc.(Boolean) ->Unit) {
     block(validate())
 }
 
