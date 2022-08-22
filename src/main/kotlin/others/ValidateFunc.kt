@@ -29,45 +29,43 @@ class ValidateFunc {
 }
 
 data class chkSizeLimted (
-    var value   : String,
-    var onFail  : (Int) -> Unit,
-    var max : Int,
-    var min  : Int) : checkFunc(){
+    var value   : String = "",
+    var onFail  : (Int) -> Unit ={},
+    var max : Int = 0,
+    var min  : Int = 0) : checkFunc(){
         var isTrue : Boolean = false
         get (){ if (value.length > min && value.length <max) return true else return false }
 }
 
 data class chkPattern (
-    var value   : String,
-    var onFail  : () -> Unit,
-    var sPattern : String) : checkFunc(){
+    var value   : String = "",
+    var onFail  : () -> Unit = {},
+    var sPattern : String = "") : checkFunc(){
     var isTrue : Boolean = false
         get (){ if ( Pattern.matches(sPattern, value ) ) return true else return false }
 }
 
+// DSL
+fun ValidateDSL(block : ValidateFunc.() ->Unit) = ValidateFunc().apply(block)
+fun ValidateFunc.Limited(block : chkSizeLimted.() ->Unit) {
+    add(chkSizeLimted().apply(block))
+}
+
+fun ValidateFunc.Regex(block : chkPattern.() ->Unit) {
+    add(chkPattern().apply(block))
+}
+
+fun ValidateFunc.checkAll(block : (Boolean) ->Unit) {
+    block(validate())
+}
 
 fun main() {
-    val words = listOf("한글이지만짧다", "한글이면서여덟글자넘는", "한글이면서여덟글자넘고숫자1")
     val checkValid = ValidateFunc()
-
-    words.forEach {
-        checkValid.add(
-            chkSizeLimted(value = "$it", onFail = { nLen -> println ("$it <-  ${nLen} size is not allowed")}, max=12, min= 8)
-        )
-
-        checkValid.add(
-            chkPattern(value= it, sPattern = "^[가-힣]*\$",
-                onFail = { println("$it <- 한글이 아닙니다") })
-        )
-
-    }
-
-    println ("${words.toString()} 결과는 ${checkValid.validate()}")
 
     val s = "123456"
     checkValid.add(
         chkSizeLimted(value= s, min=5, max = 12,
-            onFail = { n -> println("$s <- $n is not alloewed") })
+            onFail = { n -> println("$s <- $n is not allowed") })
     )
 
     checkValid.add(
@@ -77,4 +75,23 @@ fun main() {
 
     println ("${s} 결과는 ${checkValid.validate()}")
 
+    // DSL 처리
+    ValidateDSL {
+        Limited {
+            value = s
+            max   = 10
+            min   = 8
+            onFail = { n -> println("$s <- $n is not allowed")}
+        }
+
+        Regex {
+            value    = s
+            sPattern = "^[가-힣]*\$"
+            onFail   = {println("$s <- 한글아님")}
+        }
+
+        checkAll{
+            b -> println ("${s} 결과는 $b")
+        }
+    }
 }
