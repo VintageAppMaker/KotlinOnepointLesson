@@ -1,10 +1,6 @@
 # KotlinOnePointLesson - Quick Start  
 First kotlin의 내용을 핵심만 정리한 프로젝트.
 
-[{열혈코딩} 안드로이드 스튜디오로 시작하는 코틀린 ](http://www.yes24.com/24/Goods/67533956?Acode=101)
-의 예제로도 사용함. 책의 오류는 [다음링크](https://github.com/VintageAppMaker/KotlinOnepointLesson/issues)  
-
-
 > **개발자를 위한 필요한 부분으로만 핵심정리**
 
 First Kotlin은 입문자를 위해 과도한 한글표현을 사용했지만, 이 프로젝트는 평이한 개발자 수준의
@@ -21,8 +17,3 @@ Contents:
 ---------
 
 자세한 내용은 [wiki](https://github.com/VintageAppMaker/KotlinOnepointLesson/wiki)에서 관리합니다. 
-
-
-Book:
---------
-* [인터파크](http://book.interpark.com/product/BookDisplay.do?_method=detail&sc.prdNo=298354381&sc.saNo=003002003&bid1=search_auto&bid2=detail&bid3=prd_img&bid4=001) 
