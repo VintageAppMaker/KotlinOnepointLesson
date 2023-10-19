@@ -18,6 +18,7 @@
             - Dispatchers.Default (background)
         ~~~kotlin
         val scope = CoroutineScope(Dispatchers.IO)
+       
         ~~~
     -  ( 2 ) 비동기 code 실행 - launch{ ... }
         - withContext로 Main, IO, Default 전환 
